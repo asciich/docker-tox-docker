@@ -12,7 +12,7 @@ To test container:
 Example for running tox in current directory:
 
 ```
-docker run --rm -v -v $(pwd):/test/ -it asciich/tox test_in_tox .
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/test/ -it asciich/tox test_in_tox .
 ```
 
 
